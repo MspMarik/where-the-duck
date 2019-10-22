@@ -1,0 +1,28 @@
+Orange from location droplet:
+
+.color-primary-0 { color: #C5553B }	/* Main Primary color */
+.color-primary-1 { color: #FFAC98 }
+.color-primary-2 { color: #E57B62 }
+.color-primary-3 { color: #A5381E }
+.color-primary-4 { color: #7C1B04 }
+
+
+Source: https://www.stevens.edu/sites/stevens_edu/files/files/Brand-Assets/Stevens-Visual-Identity-Guide-06-2015.pdf
+Stevens Colors:
+
+.stevens-red {color: #A32638}	/*Primary Color*/
+.stevens-gray {color: #9A989A}	/*Primary Color*/
+.stevens-blue {color: #002D5D}	/*Secondary Color*/
+.stevens-orange {color: #F98E2B}/*Secondary Color*/
+.stevens-beige {color: #F3DBB3}	/*Secondary Color*/
+
+Stevens Font:
+Typeface (font):
+• Trade Gothic Regular & Oblique
+• Trade Gothic Bold & Oblique
+• Trade Gothic Extended & Bold Extended
+• Trade Gothic Condensed #18 & Condensed #18 Oblique
+• Trade Gothic Condensed #20 & Condensed #20 Oblique
+
+PowerPoint Typeface(font):
+Century Gothic
