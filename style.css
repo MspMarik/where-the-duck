@@ -1,0 +1,61 @@
+.color-primary-0 { color: #C5553B }	/* Main Primary color */
+.color-primary-1 { color: #FFAC98 }
+.color-primary-2 { color: #E57B62 }
+.color-primary-3 { color: #A5381E }
+.color-primary-4 { color: #7C1B04 }
+
+.stevens-red {color: #A32638}	/*Primary Color*/
+.stevens-gray {color: #9A989A}	/*Primary Color*/
+.stevens-blue {color: #002D5D}	/*Secondary Color*/
+.stevens-orange {color: #F98E2B}/*Secondary Color*/
+.stevens-beige {color: #F3DBB3}	/*Secondary Color*/
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0px;
+}
+
+#logo {
+    width: 14em;
+    padding: 8px;
+}
+
+nav {
+    background: #7C1B04;
+}
+
+nav > h1 {
+    text-align: center;
+    display: inline;
+    color: white;
+    font-size: 6em;
+    padding: 8px;
+}
+
+@media only screen and (min-width: 510px) and (max-width: 981px) {
+    nav > h1 {
+        font-size: 3em;
+    }
+
+    #logo {
+        width: 7em;
+    }
+}
+
+@media only screen and (max-width: 509px) {
+    nav > h1 {
+        font-size: 2em;
+    }
+
+    #logo {
+        width: 5em;
+    }
+}
+
+button {
+    padding: 8px;
+    margin: 2px;
+    background: #002D5D;
+    color: white;
+    border-radius: 15px;
+}
