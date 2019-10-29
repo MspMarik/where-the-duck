@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="script.js"></script>
     </head>
     <body>
         <nav>
@@ -17,23 +18,29 @@
 
         <div>
             <h1>Select a destination:</h1>
-            <button id="btnaltorfer">Altorfer</button>
-            <button id="btnburchard">Burchard</button>
-            <button id="btnbabbio">Babbio Center</button>
-            <button id="btncarnegie">Carnegie Laboratory</button>
-            <button id="btncph">Castle Point Hall</button>
-            <button id="btndavis">Davis Hall</button>
-            <button id="btneas">Edwin A. Stevens</button>
-            <button id="btngate">Gateway</button>
-            <button id="btnhumps">Humphreys Hall</button>
-            <button id="btnjonas">Jonas Hall</button>
-            <button id="btnmclean">McLean</button>
-            <button id="btnmpk">Morton-Perice-Kidde</button>
-            <button id="btnnorth">North Building</button>
-            <button id="btnpalmer">Palmer Hall</button>
+            <button id="btnaltorfer" onclick="showDirections(altorfer)">Altorfer</button>
+            <button id="btnburchard" onclick="showDirections(burchard)">Burchard</button>
+            <button id="btnbabbio" onclick="showDirections(babbio)">Babbio Center</button>
+            <button id="btncarnegie" onclick="showDirections(carnegie)">Carnegie Laboratory</button>
+            <button id="btncph" onclick="showDirections(cph)">Castle Point Hall</button>
+            <button id="btndavis" onclick="showDirections(davis)">Davis Hall</button>
+            <button id="btneas" onclick="showDirections(eas)">Edwin A. Stevens</button>
+            <button id="btngate" onclick="showDirections(gate)">Gateway</button>
+            <button id="btnhowe" onclick="showDirections(howe)">Howe Center</button>
+            <button id="btnhumps" onclick="showDirections(humps)">Humphreys Hall</button>
+            <button id="btnjonas" onclick="showDirections(jonas)">Jonas Hall</button>
+            <button id="btnmclean" onclick="showDirections(mclean)">McLean</button>
+            <button id="btnmpk" onclick="showDirections(mpk)">Morton-Perice-Kidde</button>
+            <button id="btnnorth" onclick="showDirections(north)">North Building</button>
+            <button id="btnpalmer" onclick="showDirections(palmer)">Palmer Hall</button>
         </div>
-        <div>
-            
+        <div id="mapdiv">
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Stevens%20Institute%20of%20Technology%20Castle%20Point%20Terrace%20Hoboken%20NJ&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    Google Maps Generator by <a href="https://www.embedgooglemap.net">embedgooglemap.net</a>
+                </div>
+            </div>
         </div>
     </body>
 </html>
