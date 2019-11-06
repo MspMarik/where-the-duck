@@ -32,26 +32,6 @@ nav > h1 {
     padding: 8px;
 }
 
-@media only screen and (min-width: 510px) and (max-width: 981px) {
-    nav > h1 {
-        font-size: 3em;
-    }
-
-    #logo {
-        width: 7em;
-    }
-}
-
-@media only screen and (max-width: 509px) {
-    nav > h1 {
-        font-size: 2em;
-    }
-
-    #logo {
-        width: 5em;
-    }
-}
-
 button {
     padding: 8px;
     margin: 2px;
@@ -62,14 +42,82 @@ button {
 
 .mapouter {
     position: relative;
-    text-align: right;
-    height: 500px;
-    width: 600px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
 }
 
 .gmap_canvas {
     overflow: hidden;
     background: none !important;
+    height: 100%;
+    width: 100%;
+}
+
+.nomargbot {
+    margin-bottom: 0px;
+}
+
+iframe {
     height: 500px;
-    width: 1800px
+    width: 1000px;
+    margin: 7px;
+}
+
+@media only screen and (min-width: 527px) and (max-width: 1049px) {
+    nav > h1 {
+        font-size: 3em;
+    }
+
+    #logo {
+        width: 7em;
+    }
+
+    iframe {
+        width: 600px;
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 526px) {
+    nav > h1 {
+        font-size: 2em;
+    }
+
+    #logo {
+        width: 5em;
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 650px) {
+    iframe {
+        width: 400px;
+    }
+}
+
+@media only screen and (min-width: 336px) and (max-width: 425px) {
+    nav > h1 {
+        font-size: 1.88em;
+    }
+
+    #logo {
+        width: 3.5em;
+    }
+
+    iframe {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 335px) {
+    nav > h1 {
+        font-size: 1.5em;
+    }
+
+    #logo {
+        width: 3em;
+    }
+
+    iframe {
+        width: 250px;
+    }
 }
