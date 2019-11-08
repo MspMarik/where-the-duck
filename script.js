@@ -1,3 +1,5 @@
+// Created by Mark Spivak, Nidhi Parekh, Jingmin Jin, and Jawann Cort
+
 var altorfer = 'Kenneth%20J.%20Altorfer%20Academic%20hoboken';
 var burchard = 'burchard%20memorial%20stevens%20hoboken';
 var babbio = 'babbio%20center%20hoboken';
@@ -13,9 +15,9 @@ var mclean = 'mclean%20hoboken';
 var mpk = 'morton%20pierce%20hoboken';
 var north = 'north%20building%20stevens%20hoboken';
 var palmer = 'palmer%20hall%20hoboken';
-var schaefer= 'schaefer%20athletic%20center%hoboken';
+var schaefer = 'schaefer%20athletic%20center%hoboken';
 var bennys = 'bennys%20tudinos%20hoboken';
-var seveneleven ='7%20Eleven%20hoboken'
+var seveneleven = '7%20Eleven%20hoboken';
 var CVS = 'CVS%20Pharmacy%20hoboken';
 var starbucks = 'starbucks%20hoboken';
 var Chipotle = 'chipotle%20hoboken';
@@ -26,7 +28,6 @@ var Kungfutea = 'Kung%20Fu%20hoboken';
 var Walgreens = 'Walgreens%20hoboken';
 var karmakafe = 'Karma%20Kafe%20hoboken';
 var Simplychai = 'Simply%20Chai%20hoboken';
-
 
 function showDirections(loc) {
 	document.getElementById('gmap_canvas').src =

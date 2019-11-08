@@ -1,123 +1,170 @@
-.color-primary-0 { color: #C5553B }	/* Main Primary color */
-.color-primary-1 { color: #FFAC98 }
-.color-primary-2 { color: #E57B62 }
-.color-primary-3 { color: #A5381E }
-.color-primary-4 { color: #7C1B04 }
+/* Created by Mark Spivak, Nidhi Parekh, Jingmin Jin, and Jawann Cort */
 
-.stevens-red {color: #A32638}	/*Primary Color*/
-.stevens-gray {color: #9A989A}	/*Primary Color*/
-.stevens-blue {color: #002D5D}	/*Secondary Color*/
-.stevens-orange {color: #F98E2B}/*Secondary Color*/
-.stevens-beige {color: #F3DBB3}	/*Secondary Color*/
+.color-primary-0 {
+	color: #c5553b;
+}
+.color-primary-1 {
+	color: #ffac98;
+}
+.color-primary-2 {
+	color: #e57b62;
+}
+.color-primary-3 {
+	color: #a5381e;
+}
+.color-primary-4 {
+	color: #7c1b04;
+}
+
+.stevens-red {
+	color: #a32638;
+}
+.stevens-gray {
+	color: #9a989a;
+}
+.stevens-blue {
+	color: #002d5d;
+}
+.stevens-orange {
+	color: #f98e2b;
+}
+.stevens-beige {
+	color: #f3dbb3;
+}
 
 body {
-    font-family: 'Josefin Sans', sans-serif;
-    margin: 0px;
+	font-family: 'Josefin Sans', sans-serif;
+	margin: 0px;
 }
 
 #logo {
-    width: 14em;
-    padding: 8px;
+	width: 14em;
+	padding: 8px;
 }
 
 nav {
-    background: #7C1B04;
+	background: #7c1b04;
+	position: relative;
 }
 
 nav > h1 {
-    text-align: center;
-    display: inline;
-    color: white;
-    font-size: 6em;
-    padding: 8px;
+	text-align: center;
+	display: inline;
+	color: white;
+	font-size: 6em;
+	padding: 8px;
 }
 
 button {
-    padding: 8px;
-    margin: 2px;
-    background: #002D5D;
-    color: white;
-    border-radius: 15px;
+	padding: 8px;
+	margin: 2px;
+	background: #002d5d;
+	color: white;
+	border-radius: 15px;
 }
 
 .mapouter {
-    position: relative;
-    text-align: center;
-    height: 100%;
-    width: 100%;
+	position: relative;
+	text-align: center;
+	height: 100%;
+	width: 100%;
 }
 
 .gmap_canvas {
-    overflow: hidden;
-    background: none !important;
-    height: 100%;
-    width: 100%;
+	overflow: hidden;
+	background: none !important;
+	height: 100%;
+	width: 100%;
 }
 
 .nomargbot {
-    margin-bottom: 0px;
+	margin-bottom: 0px;
 }
 
 iframe {
-    height: 500px;
-    width: 1000px;
-    margin: 7px;
+	height: 500px;
+	width: 1000px;
+	margin: 7px;
+}
+
+.byline {
+	color: white;
+	padding-right: 7px;
+	font-size: small;
+}
+
+@media only screen and (min-width: 1400px) {
+	.byline {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+}
+
+@media only screen and (max-width: 526px) {
+	.byline {
+		font-size: x-small;
+	}
 }
 
 @media only screen and (min-width: 527px) and (max-width: 1049px) {
-    nav > h1 {
-        font-size: 3em;
-    }
+	nav > h1 {
+		font-size: 3em;
+	}
 
-    #logo {
-        width: 7em;
-    }
+	#logo {
+		width: 7em;
+	}
 
-    iframe {
-        width: 600px;
-    }
+	iframe {
+		width: 600px;
+	}
 }
 
 @media only screen and (min-width: 426px) and (max-width: 526px) {
-    nav > h1 {
-        font-size: 2em;
-    }
+	nav > h1 {
+		font-size: 2em;
+	}
 
-    #logo {
-        width: 5em;
-    }
+	#logo {
+		width: 5em;
+	}
 }
 
 @media only screen and (min-width: 426px) and (max-width: 650px) {
-    iframe {
-        width: 400px;
-    }
+	iframe {
+		width: 400px;
+	}
 }
 
 @media only screen and (min-width: 336px) and (max-width: 425px) {
-    nav > h1 {
-        font-size: 1.88em;
-    }
+	nav > h1 {
+		font-size: 1.88em;
+	}
 
-    #logo {
-        width: 3.5em;
-    }
+	#logo {
+		width: 3.5em;
+	}
 
-    iframe {
-        width: 300px;
-    }
+	iframe {
+		width: 300px;
+	}
 }
 
 @media only screen and (max-width: 335px) {
-    nav > h1 {
-        font-size: 1.5em;
-    }
+	nav > h1 {
+		font-size: 1.5em;
+	}
 
-    #logo {
-        width: 3em;
-    }
+	#logo {
+		width: 3em;
+	}
 
-    iframe {
-        width: 250px;
-    }
+	iframe {
+		width: 250px;
+	}
+
+	.byline {
+		font-size: 0.5em;
+	}
 }
