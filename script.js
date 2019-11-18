@@ -18,16 +18,16 @@ var palmer = 'palmer%20hall%20hoboken';
 var schaefer = 'schaefer%20athletic%20center%hoboken';
 var bennys = 'bennys%20tudinos%20hoboken';
 var seveneleven = '7%20Eleven%20hoboken';
-var CVS = 'CVS%20Pharmacy%20hoboken';
+var cvs = 'CVS%20Pharmacy%20hoboken';
 var starbucks = 'starbucks%20hoboken';
-var Chipotle = 'chipotle%20hoboken';
+var chipotle = 'chipotle%20hoboken';
 var insomnia = 'insomnia%20cookies%20hoboken';
 var pitapit = 'pita%20pit%20hoboken';
 var shoprite = 'shoprite%20hoboken';
-var Kungfutea = 'Kung%20Fu%20hoboken';
-var Walgreens = 'Walgreens%20hoboken';
+var kungfutea = 'Kung%20Fu%20hoboken';
+var walgreens = 'Walgreens%20hoboken';
 var karmakafe = 'Karma%20Kafe%20hoboken';
-var Simplychai = 'Simply%20Chai%20hoboken';
+var simplychai = 'Simply%20Chai%20hoboken';
 
 function showDirections(loc) {
 	document.getElementById('gmap_canvas').src =

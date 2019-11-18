@@ -27,36 +27,80 @@
             <h1 class="nomargbot">Select a Destination:</h1>
             <hr>
             <h2>Places Inside of Campus</h2>
-            <button id="btnaltorfer" onclick="showDirections(altorfer)">Altorfer</button>
-            <button id="btnburchard" onclick="showDirections(burchard)">Burchard</button>
-            <button id="btnbabbio" onclick="showDirections(babbio)">Babbio Center</button>
-            <button id="btncarnegie" onclick="showDirections(carnegie)">Carnegie Laboratory</button>
-            <button id="btncph" onclick="showDirections(cph)">Castle Point Hall</button>
-            <button id="btndavis" onclick="showDirections(davis)">Davis Hall</button>
-            <button id="btneas" onclick="showDirections(eas)">Edwin A. Stevens</button>
-            <button id="btngate" onclick="showDirections(gate)">Gateway</button>
-            <button id="btnhowe" onclick="showDirections(howe)">Howe Center</button>
-            <button id="btnhumps" onclick="showDirections(humps)">Humphreys Hall</button>
-            <button id="btnjonas" onclick="showDirections(jonas)">Jonas Hall</button>
-            <button id="btnmclean" onclick="showDirections(mclean)">McLean</button>
-            <button id="btnmpk" onclick="showDirections(mpk)">Morton-Perice-Kidde</button>
-            <button id="btnnorth" onclick="showDirections(north)">North Building</button>
-            <button id="btnpalmer" onclick="showDirections(palmer)">Palmer Hall</button>
-            <button id="btnschaefer" onclick="showDirections(schaefer)">Schaefer Athletic Center</button>
-            <h2>Places Outside of Campus:</h2>
-            <button id="btnbennys" onclick ="showDirections(bennys)">Benny Tudinos</button>
-            <button id="btnCVS" onclick="showDirections(CVS)">CVS Pharmacy</button>
-            <button id="btnchipotle" onclick="showDirections(Chipotle)">Chipotle</button>
-            <button id="btninsomnia" onclick="showDirections(insomnia)">Insomnia Cookies</button>
-            <button id="btnkarma" onclick="showDirections(karmakafe)">Karma Kafe</button>
-            <button id="btnkungfutea" onclick="showDirections(Kungfutea)">Kung Fu Tea</button>
-            <button id="btnpitapit" onclick="showDirections(pitapit)">Pita Pit</button>
-            <button id="btnsimplychai" onclick="showDirections(Simplychai)">Simply Chai</button>
-            <button id="btnshoprite" onclick="showDirections(shoprite)">ShopRite</button>
-            <button id="btnstarbucks" onclick="showDirections(starbucks)">Starbucks</button>
-            <button id="btnwalgreens" onclick="showDirections(Walgreens)">Walgreens</button>
-            <button id="btn7Eleven" onclick="showDirections(seveneleven)">7 Eleven</button>
+            <div class="buttons">
+                <button id="btnaltorfer" onclick="showDirections(altorfer)">Altorfer</button>
+                <button id="btnburchard" onclick="showDirections(burchard)">Burchard</button>
+                <button id="btnbabbio" onclick="showDirections(babbio)">Babbio Center</button>
+                <button id="btncarnegie" onclick="showDirections(carnegie)">Carnegie Laboratory</button>
+                <button id="btncph" onclick="showDirections(cph)">Castle Point Hall</button>
+                <button id="btndavis" onclick="showDirections(davis)">Davis Hall</button>
+                <button id="btneas" onclick="showDirections(eas)">Edwin A. Stevens</button>
+                <button id="btngate" onclick="showDirections(gate)">Gateway</button>
+                <button id="btnhowe" onclick="showDirections(howe)">Howe Center</button>
+                <button id="btnhumps" onclick="showDirections(humps)">Humphreys Hall</button>
+                <button id="btnjonas" onclick="showDirections(jonas)">Jonas Hall</button>
+                <button id="btnmclean" onclick="showDirections(mclean)">McLean</button>
+                <button id="btnmpk" onclick="showDirections(mpk)">Morton-Peirce-Kidde</button>
+                <button id="btnnorth" onclick="showDirections(north)">North Building</button>
+                <button id="btnpalmer" onclick="showDirections(palmer)">Palmer Hall</button>
+                <button id="btnschaefer" onclick="showDirections(schaefer)">Schaefer Athletic Center</button>
+            </div>
+            <div class="dropdown">
+                <select onchange="showDirections(this.value)">
+                    <option selected="true" disabled="disabled" value="">-- Select an Option --</option>
+                    <option value="altorfer">Altorfer</option>
+                    <option value="burchard">Burchard</option>
+                    <option value="babbio">Babbio Center</option>
+                    <option value="carnegie">Carnegie Laboratory</option>
+                    <option value="cph">Castle Point Hall</option>
+                    <option value="davis">Davis Hall</option>
+                    <option value="eas">Edwin A. Stevens</option>
+                    <option value="gate">Gateway</option>
+                    <option value="howe">Howe Center</option>
+                    <option value="humps">Humphreys Hall</option>
+                    <option value="joans">Jonas Hall</option>
+                    <option value="mclean">Mclean</option>
+                    <option value="mpk">Morton-Peirce-Kidde</option>
+                    <option value="north">North Building</option>
+                    <option value="palmer">Palmer Hall</option>
+                    <option value="schaefer">Schaefer Athletic Center</option>
+                </select>
+                
+            </div>
             
+            <h2>Places Outside of Campus:</h2>
+            <div class="buttons">
+                <button id="btnbennys" onclick ="showDirections(bennys)">Benny Tudinos</button>
+                <button id="btnCVS" onclick="showDirections(cvs)">CVS Pharmacy</button>
+                <button id="btnchipotle" onclick="showDirections(chipotle)">Chipotle</button>
+                <button id="btninsomnia" onclick="showDirections(insomnia)">Insomnia Cookies</button>
+                <button id="btnkarma" onclick="showDirections(karmakafe)">Karma Kafe</button>
+                <button id="btnkungfutea" onclick="showDirections(kungfutea)">Kung Fu Tea</button>
+                <button id="btnpitapit" onclick="showDirections(pitapit)">Pita Pit</button>
+                <button id="btnsimplychai" onclick="showDirections(simplychai)">Simply Chai</button>
+                <button id="btnshoprite" onclick="showDirections(shoprite)">ShopRite</button>
+                <button id="btnstarbucks" onclick="showDirections(starbucks)">Starbucks</button>
+                <button id="btnwalgreens" onclick="showDirections(walgreens)">Walgreens</button>
+                <button id="btn7Eleven" onclick="showDirections(seveneleven)">7 Eleven</button>
+            </div>
+            <div class="dropdown">
+                <select onchange="showDirections(this.value)">
+                    <option selected="true" disabled="disabled" value="">-- Select an Option --</option>
+                    <option value="bennys">Benny Tudinos</option>
+                    <option value="cvs">CVS Pharmacy</option>
+                    <option value="chipotle">Chipotle</option>
+                    <option value="insomnia">Insomnia Cookies</option>
+                    <option value="karmakafe">Karma Kafe</option>
+                    <option value="kungfutea">Kung Fu Tea</option>
+                    <option value="pitapit">Pita Pit</option>
+                    <option value="simplychai">Simply Chai</option>
+                    <option value="shoprite">ShopRite</option>
+                    <option value="starbucks">Starbucks</option>
+                    <option value="walgreens">Walgreens</option>
+                    <option value="seveneleven">7 Eleven</option>
+                    <option value="mpk">Morton-Peirce-Kidde</option>
+                </select>
+            </div>
         </div>
         <div id="mapdiv">
             <div class="mapouter">
