@@ -33,3 +33,39 @@ function showDirections(loc) {
 	document.getElementById('gmap_canvas').src =
 		'https://maps.google.com/maps?q=' + loc + '&t=&z=13&ie=UTF8&iwloc=&output=embed';
 }
+
+function submitForm() {
+	event.preventDefault();
+	const name = document.getElementById('name').value;
+	const rate = document.querySelector('input[name="rating"]:checked').value;
+	const comment = document.getElementById('comments').value;
+	document.getElementById('h3').style.display = 'none';
+	document.getElementById('innerForm').style.display = 'none';
+	let thankDiv = document.createElement('div');
+	let thankH4 = document.createElement('h4');
+	thankH4.appendChild(document.createTextNode('Thanks for submitting your feedback!'));
+	let thankP = document.createElement('p');
+	thankP.appendChild(document.createTextNode("Here's what you submitted:"));
+	let br = document.createElement('br');
+	thankP.appendChild(br);
+	thankP.appendChild(document.createTextNode('Name:'));
+	thankP.appendChild(document.createTextNode(name));
+	thankP.appendChild(br);
+	thankP.appendChild(document.createTextNode('Rating:'));
+	thankP.appendChild(document.createTextNode(rate + '/5'));
+	thankP.appendChild(br);
+	thankP.appendChild(document.createTextNode('Comments:'));
+	thankP.appendChild(document.createTextNode(comment));
+	thankDiv.appendChild(thankH4);
+	thankDiv.appendChild(thankP);
+	document.getElementById('form').appendChild(thankDiv);
+}
+
+window.onload = () => {
+	document.getElementById('form').addEventListener('mouseover', function() {
+		document.getElementById('form').style.color = '#f98e2b';
+	});
+	document.getElementById('form').addEventListener('mouseout', function() {
+		document.getElementById('form').style.color = 'black';
+	});
+};

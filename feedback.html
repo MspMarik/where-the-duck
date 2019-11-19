@@ -1,0 +1,50 @@
+<!--
+    Created by Mark Spivak, Nidhi Parekh, Jingmin Jin, and Jawann Cort
+    We pledge our honor that we have abided by the Stevens Honor System
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Where The Duck</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <nav>
+            <img id="logo" src="img/logo.png">
+            <h1>Where The Duck</h1>
+            <br>
+            <p class="byline">Created by Mark Spivak, Nidhi Parekh, Jingmin Jin, and Jawann Cort</p>
+            <div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="form" id="form">
+            <br>
+            <h3 id="h3">Enter your feedback!</h3>
+            <form id="innerForm">
+                Name:<br>
+                <input type="text" name="name" id="name" placeholder="Name"><br><br>
+                Rating:<br>
+                <input type="radio" name="rating" value="1"> 1<br>
+                <input type="radio" name="rating" value="2"> 2<br>
+                <input type="radio" name="rating" value="3"> 3<br>
+                <input type="radio" name="rating" value="4"> 4<br>
+                <input type="radio" name="rating" value="5"> 5<br><br>
+                Comments:<br>
+                <textarea name="comments" id="comments" rows="10" cols="30" placeholder="Your comments here"></textarea><br>
+                <input type="submit" value="Submit" id="submit" onclick="submitForm()">
+            </form>
+        </div>
+    </body>
+</html>
