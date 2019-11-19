@@ -63,7 +63,26 @@ function submitForm() {
 
 window.onload = () => {
 	document.getElementById('form').addEventListener('mouseover', function() {
-		document.getElementById('form').style.color = '#f98e2b';
+		let x = Math.floor(Math.random() * 10 + 1);
+		if (x == 1) {
+			document.getElementById('form').style.color = 'red';
+		} else if (x == 2) {
+			document.getElementById('form').style.color = 'cornflowerblue';
+		} else if (x == 3) {
+			document.getElementById('form').style.color = 'pink';
+		} else if (x == 4) {
+			document.getElementById('form').style.color = 'green';
+		} else if (x == 5) {
+			document.getElementById('form').style.color = 'purple';
+		} else if (x == 6) {
+			document.getElementById('form').style.color = 'firebrick';
+		} else if (x == 8) {
+			document.getElementById('form').style.color = 'olive';
+		} else if (x == 9) {
+			document.getElementById('form').style.color = 'salmon';
+		} else if (x == 10) {
+			document.getElementById('form').style.color = 'mediumorchid';
+		}
 	});
 	document.getElementById('form').addEventListener('mouseout', function() {
 		document.getElementById('form').style.color = 'black';

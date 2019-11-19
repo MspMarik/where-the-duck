@@ -144,6 +144,11 @@ textarea {
 	resize: none;
 }
 
+.surprise {
+	margin: auto;
+	text-align: center;
+}
+
 @media only screen and (min-width: 1400px) {
 	.byline {
 		position: absolute;
