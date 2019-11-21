@@ -13,11 +13,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
-        <script type="text/javascript" src="script.js"></script>
+        <script src="script.js"></script>
     </head>
     <body>
         <nav>
-            <img id="logo" src="img/logo.png">
+            <img id="logo" alt="Where the Duck Logo" src="img/logo.png">
             <h1>Where The Duck</h1>
             <br>
             <p class="byline">Created by Mark Spivak, Nidhi Parekh, Jingmin Jin, and Jawann Cort</p>
@@ -53,7 +53,7 @@
             </div>
             <div class="dropdown">
                 <select onchange="showDirections(this.value)">
-                    <option selected="true" disabled="disabled" value="">-- Select an Option --</option>
+                    <option selected disabled="disabled" value="">-- Select an Option --</option>
                     <option value="altorfer">Altorfer</option>
                     <option value="burchard">Burchard</option>
                     <option value="babbio">Babbio Center</option>
@@ -91,7 +91,7 @@
             </div>
             <div class="dropdown">
                 <select onchange="showDirections(this.value)">
-                    <option selected="true" disabled="disabled" value="">-- Select an Option --</option>
+                    <option selected disabled="disabled" value="">-- Select an Option --</option>
                     <option value="bennys">Benny Tudinos</option>
                     <option value="cvs">CVS Pharmacy</option>
                     <option value="chipotle">Chipotle</option>
@@ -111,7 +111,7 @@
         <div id="mapdiv">
             <div class="mapouter">
                 <div class="gmap_canvas">
-                    <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=Stevens%20Institute%20of%20Technology%20Castle%20Point%20Terrace%20Hoboken%20NJ&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=Stevens%20Institute%20of%20Technology%20Castle%20Point%20Terrace%20Hoboken%20NJ&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
                     <!-- <p>Google Maps Generator by <a href="https://www.embedgooglemap.net">embedgooglemap.net</a></p> -->
                 </div>
             </div>
